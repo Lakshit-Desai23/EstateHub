@@ -1,169 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Properties - EstateHub</title>
-  <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <title>Properties - EstateHub</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <nav>
+        <div class="logo">Estate<span>Hub</span></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="properties.html" class="active">Properties</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="nav-cta">List Property</a></li>
+        </ul>
+    </nav>
 
-<nav>
-  <div class="logo">Estate<span>Hub</span></div>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="properties.html" class="active">Properties</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="contact.html" class="nav-cta">List Property</a></li>
-  </ul>
-</nav>
+    <div class="page-hero"><h1>All Properties</h1></div>
 
-<div class="page-hero">
-  <h1>All Properties</h1>
-  <p>Explore our full collection of verified listings</p>
-</div>
-
-<div class="filters-bar">
-  <input type="text" id="filterLocation" placeholder="Location..." />
-  <select id="filterType">
-    <option value="">All Types</option>
-    <option value="house">House</option>
-    <option value="apartment">Apartment</option>
-    <option value="condo">Condo</option>
-    <option value="villa">Villa</option>
-  </select>
-  <select id="filterStatus">
-    <option value="">Buy or Rent</option>
-    <option value="sale">For Sale</option>
-    <option value="rent">For Rent</option>
-  </select>
-  <select id="filterPrice">
-    <option value="">Any Price</option>
-    <option value="0-200000">Under $200K</option>
-    <option value="200000-500000">$200K - $500K</option>
-    <option value="500000-1000000">$500K - $1M</option>
-    <option value="1000000-99999999">$1M+</option>
-  </select>
-  <button id="filterBtn">Apply Filters</button>
-</div>
-
-<section class="properties-section">
-  <div class="properties-grid">
-
-    <div class="property-card" data-location="new york" data-type="apartment" data-price="450000" data-status="sale">
-      <div class="card-img-wrap"><div class="property-img">🏢</div><span class="property-badge">For Sale</span></div>
-      <div class="property-info">
-        <div class="property-price">$450,000</div>
-        <div class="property-title">Modern Downtown Apartment</div>
-        <div class="property-location">📍 Manhattan, New York</div>
-        <div class="property-features"><span>🛏 3 Beds</span><span>🚿 2 Baths</span><span>📐 1,200 sqft</span></div>
-      </div>
+    <div class="properties-grid">
+        <div class="property-card" data-location="new york" data-type="apartment">
+            <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80" class="property-img">
+            <div class="property-info">
+                <p class="property-price">$450,000</p>
+                <p class="property-title">Modern Downtown Apartment</p>
+                <p class="property-location">📍 Manhattan, NY</p>
+            </div>
+        </div>
+        <div class="property-card" data-location="los angeles" data-type="villa">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80" class="property-img">
+            <div class="property-info">
+                <p class="property-price">$1,250,000</p>
+                <p class="property-title">Luxury Hillside Villa</p>
+                <p class="property-location">📍 Beverly Hills, CA</p>
+            </div>
+        </div>
     </div>
 
-    <div class="property-card" data-location="los angeles" data-type="villa" data-price="1250000" data-status="sale">
-      <div class="card-img-wrap"><div class="property-img">🏡</div><span class="property-badge">For Sale</span></div>
-      <div class="property-info">
-        <div class="property-price">$1,250,000</div>
-        <div class="property-title">Luxury Hillside Villa</div>
-        <div class="property-location">📍 Beverly Hills, Los Angeles</div>
-        <div class="property-features"><span>🛏 5 Beds</span><span>🚿 4 Baths</span><span>📐 4,500 sqft</span></div>
-      </div>
-    </div>
-
-    <div class="property-card" data-location="chicago" data-type="house" data-price="320000" data-status="sale">
-      <div class="card-img-wrap"><div class="property-img">🏠</div><span class="property-badge">For Sale</span></div>
-      <div class="property-info">
-        <div class="property-price">$320,000</div>
-        <div class="property-title">Cozy Family Home</div>
-        <div class="property-location">📍 Lincoln Park, Chicago</div>
-        <div class="property-features"><span>🛏 4 Beds</span><span>🚿 2 Baths</span><span>📐 2,100 sqft</span></div>
-      </div>
-    </div>
-
-    <div class="property-card" data-location="miami" data-type="condo" data-price="2800" data-status="rent">
-      <div class="card-img-wrap"><div class="property-img">🏙️</div><span class="property-badge" style="background:#1a3c5e">For Rent</span></div>
-      <div class="property-info">
-        <div class="property-price">$2,800/mo</div>
-        <div class="property-title">Beachfront Condo</div>
-        <div class="property-location">📍 South Beach, Miami</div>
-        <div class="property-features"><span>🛏 2 Beds</span><span>🚿 2 Baths</span><span>📐 980 sqft</span></div>
-      </div>
-    </div>
-
-    <div class="property-card" data-location="austin" data-type="house" data-price="580000" data-status="sale">
-      <div class="card-img-wrap"><div class="property-img">🏘️</div><span class="property-badge">For Sale</span></div>
-      <div class="property-info">
-        <div class="property-price">$580,000</div>
-        <div class="property-title">Contemporary Smart Home</div>
-        <div class="property-location">📍 East Austin, Texas</div>
-        <div class="property-features"><span>🛏 4 Beds</span><span>🚿 3 Baths</span><span>📐 2,800 sqft</span></div>
-      </div>
-    </div>
-
-    <div class="property-card" data-location="seattle" data-type="apartment" data-price="3500" data-status="rent">
-      <div class="card-img-wrap"><div class="property-img">🌆</div><span class="property-badge" style="background:#1a3c5e">For Rent</span></div>
-      <div class="property-info">
-        <div class="property-price">$3,500/mo</div>
-        <div class="property-title">Skyline View Apartment</div>
-        <div class="property-location">📍 Capitol Hill, Seattle</div>
-        <div class="property-features"><span>🛏 2 Beds</span><span>🚿 1 Bath</span><span>📐 850 sqft</span></div>
-      </div>
-    </div>
-
-    <div class="property-card" data-location="denver" data-type="house" data-price="415000" data-status="sale">
-      <div class="card-img-wrap"><div class="property-img">🏔️</div><span class="property-badge">For Sale</span></div>
-      <div class="property-info">
-        <div class="property-price">$415,000</div>
-        <div class="property-title">Mountain View Ranch</div>
-        <div class="property-location">📍 Cherry Creek, Denver</div>
-        <div class="property-features"><span>🛏 3 Beds</span><span>🚿 2 Baths</span><span>📐 1,900 sqft</span></div>
-      </div>
-    </div>
-
-    <div class="property-card" data-location="san francisco" data-type="condo" data-price="4200" data-status="rent">
-      <div class="card-img-wrap"><div class="property-img">🌉</div><span class="property-badge" style="background:#1a3c5e">For Rent</span></div>
-      <div class="property-info">
-        <div class="property-price">$4,200/mo</div>
-        <div class="property-title">Bay Area Luxury Condo</div>
-        <div class="property-location">📍 SoMa, San Francisco</div>
-        <div class="property-features"><span>🛏 2 Beds</span><span>🚿 2 Baths</span><span>📐 1,100 sqft</span></div>
-      </div>
-    </div>
-
-    <div class="property-card" data-location="phoenix" data-type="villa" data-price="890000" data-status="sale">
-      <div class="card-img-wrap"><div class="property-img">🌵</div><span class="property-badge">For Sale</span></div>
-      <div class="property-info">
-        <div class="property-price">$890,000</div>
-        <div class="property-title">Desert Oasis Villa</div>
-        <div class="property-location">📍 Scottsdale, Phoenix</div>
-        <div class="property-features"><span>🛏 5 Beds</span><span>🚿 4 Baths</span><span>📐 3,800 sqft</span></div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section class="cta-banner">
-  <h2>Can't Find What You're Looking For?</h2>
-  <p>Our agents can help you find the perfect property tailored to your needs.</p>
-  <a href="contact.html" class="btn btn-accent">Contact an Agent</a>
-</section>
-
-<footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <div class="logo">Estate<span>Hub</span></div>
-      <p>Your trusted partner in real estate. We help you find, buy, sell, and rent properties with confidence.</p>
-    </div>
-    <div><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="properties.html">Properties</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-    <div><h4>Property Types</h4><ul><li><a href="properties.html">Houses</a></li><li><a href="properties.html">Apartments</a></li><li><a href="properties.html">Condos</a></li><li><a href="properties.html">Villas</a></li></ul></div>
-    <div><h4>Contact</h4><ul><li><a href="#">📞 +1 (800) 555-0100</a></li><li><a href="#">✉️ info@estatehub.com</a></li><li><a href="#">📍 123 Realty Ave, NY</a></li></ul></div>
-  </div>
-  <div class="footer-bottom"><p>&copy; 2026 EstateHub. All rights reserved.</p></div>
-</footer>
-
-<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
-""

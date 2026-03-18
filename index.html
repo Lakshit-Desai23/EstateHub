@@ -1,333 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EstateHub - Find Your Dream Home</title>
-  <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EstateHub | Luxury Real Estate</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <nav>
+        <div class="logo">Estate<span>Hub</span></div>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="nav-cta">List Property</a></li>
+        </ul>
+    </nav>
 
-<!-- NAV -->
-<nav>
-  <div class="logo">Estate<span>Hub</span></div>
-  <ul>
-    <li><a href="index.html" class="active">Home</a></li>
-    <li><a href="properties.html">Properties</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="contact.html" class="nav-cta">List Property</a></li>
-  </ul>
-</nav>
+    <header class="hero">
+        <h1>Discover Your <span>Dream Home</span></h1>
+        <p>Premium properties in the most sought-after locations.</p>
+        <a href="properties.html" style="background:var(--accent); color:white; padding:12px 25px; border-radius:5px; display:inline-block; margin-top:20px;">Explore Listings</a>
+    </header>
 
-<!-- HERO -->
-<section class="hero">
-  <h1>Find Your <span>Dream Home</span><br>With Confidence</h1>
-  <p>Browse thousands of verified listings across the country. Buy, sell, or rent with trusted agents by your side.</p>
-  <div class="search-bar">
-    <input type="text" id="searchLocation" placeholder="City, neighborhood, or ZIP..." />
-    <select id="searchType">
-      <option value="">All Types</option>
-      <option value="house">House</option>
-      <option value="apartment">Apartment</option>
-      <option value="condo">Condo</option>
-      <option value="villa">Villa</option>
-    </select>
-    <select id="searchPrice">
-      <option value="">Any Price</option>
-      <option value="0-200000">Under $200K</option>
-      <option value="200000-500000">$200K - $500K</option>
-      <option value="500000-1000000">$500K - $1M</option>
-      <option value="1000000-99999999">$1M+</option>
-    </select>
-    <button id="searchBtn">Search</button>
-  </div>
-</section>
+    <section class="stats">
+        <div class="stat-item"><h3 data-target="4800" data-suffix="+">0</h3><p>Properties Listed</p></div>
+        <div class="stat-item"><h3 data-target="3200" data-suffix="+">0</h3><p>Happy Clients</p></div>
+        <div class="stat-item"><h3 data-target="15" data-suffix=" yrs">0</h3><p>Experience</p></div>
+    </section>
 
-<!-- STATS -->
-<div class="stats">
-  <div class="stat-item">
-    <h3 data-target="4800" data-suffix="+">0</h3>
-    <p>Properties Listed</p>
-  </div>
-  <div class="stat-item">
-    <h3 data-target="3200" data-suffix="+">0</h3>
-    <p>Happy Clients</p>
-  </div>
-  <div class="stat-item">
-    <h3 data-target="120" data-suffix="+">0</h3>
-    <p>Expert Agents</p>
-  </div>
-  <div class="stat-item">
-    <h3 data-target="15" data-suffix=" yrs">0</h3>
-    <p>Years of Experience</p>
-  </div>
-</div>
-
-<!-- FEATURED PROPERTIES -->
-<section>
-  <div class="section-title">
-    <h2>Featured Properties</h2>
-    <p>Hand-picked listings from our top agents</p>
-  </div>
-  <div class="properties-grid">
-
-    <div class="property-card" data-location="new york" data-type="apartment" data-price="450000" data-status="sale">
-      <div class="card-img-wrap">
-        <div class="property-img">🏢</div>
-        <span class="property-badge">For Sale</span>
-      </div>
-      <div class="property-info">
-        <div class="property-price">$450,000</div>
-        <div class="property-title">Modern Downtown Apartment</div>
-        <div class="property-location">📍 Manhattan, New York</div>
-        <div class="property-features">
-          <span>🛏 3 Beds</span>
-          <span>🚿 2 Baths</span>
-          <span>📐 1,200 sqft</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="property-card" data-location="los angeles" data-type="villa" data-price="1250000" data-status="sale">
-      <div class="card-img-wrap">
-        <div class="property-img">🏡</div>
-        <span class="property-badge">For Sale</span>
-      </div>
-      <div class="property-info">
-        <div class="property-price">$1,250,000</div>
-        <div class="property-title">Luxury Hillside Villa</div>
-        <div class="property-location">📍 Beverly Hills, Los Angeles</div>
-        <div class="property-features">
-          <span>🛏 5 Beds</span>
-          <span>🚿 4 Baths</span>
-          <span>📐 4,500 sqft</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="property-card" data-location="chicago" data-type="house" data-price="320000" data-status="sale">
-      <div class="card-img-wrap">
-        <div class="property-img">🏠</div>
-        <span class="property-badge">For Sale</span>
-      </div>
-      <div class="property-info">
-        <div class="property-price">$320,000</div>
-        <div class="property-title">Cozy Family Home</div>
-        <div class="property-location">📍 Lincoln Park, Chicago</div>
-        <div class="property-features">
-          <span>🛏 4 Beds</span>
-          <span>🚿 2 Baths</span>
-          <span>📐 2,100 sqft</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="property-card" data-location="miami" data-type="condo" data-price="2800" data-status="rent">
-      <div class="card-img-wrap">
-        <div class="property-img">🏙️</div>
-        <span class="property-badge" style="background:#1a3c5e">For Rent</span>
-      </div>
-      <div class="property-info">
-        <div class="property-price">$2,800/mo</div>
-        <div class="property-title">Beachfront Condo</div>
-        <div class="property-location">📍 South Beach, Miami</div>
-        <div class="property-features">
-          <span>🛏 2 Beds</span>
-          <span>🚿 2 Baths</span>
-          <span>📐 980 sqft</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="property-card" data-location="austin" data-type="house" data-price="580000" data-status="sale">
-      <div class="card-img-wrap">
-        <div class="property-img">🏘️</div>
-        <span class="property-badge">For Sale</span>
-      </div>
-      <div class="property-info">
-        <div class="property-price">$580,000</div>
-        <div class="property-title">Contemporary Smart Home</div>
-        <div class="property-location">📍 East Austin, Texas</div>
-        <div class="property-features">
-          <span>🛏 4 Beds</span>
-          <span>🚿 3 Baths</span>
-          <span>📐 2,800 sqft</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="property-card" data-location="seattle" data-type="apartment" data-price="3500" data-status="rent">
-      <div class="card-img-wrap">
-        <div class="property-img">🌆</div>
-        <span class="property-badge" style="background:#1a3c5e">For Rent</span>
-      </div>
-      <div class="property-info">
-        <div class="property-price">$3,500/mo</div>
-        <div class="property-title">Skyline View Apartment</div>
-        <div class="property-location">📍 Capitol Hill, Seattle</div>
-        <div class="property-features">
-          <span>🛏 2 Beds</span>
-          <span>🚿 1 Bath</span>
-          <span>📐 850 sqft</span>
-        </div>
-      </div>
-    </div>
-
-  </div>
-  <div style="text-align:center; margin-top:40px;">
-    <a href="properties.html" class="btn btn-accent">View All Properties</a>
-  </div>
-</section>
-
-<!-- WHY CHOOSE US -->
-<section style="background:var(--light)">
-  <div class="section-title">
-    <h2>Why Choose EstateHub</h2>
-    <p>We make buying, selling, and renting simple and stress-free</p>
-  </div>
-  <div class="features-grid">
-    <div class="feature-card">
-      <div class="feature-icon">🔍</div>
-      <h3>Smart Search</h3>
-      <p>Advanced filters to find exactly what you're looking for in seconds.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">✅</div>
-      <h3>Verified Listings</h3>
-      <p>Every property is verified by our team before going live.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">🤝</div>
-      <h3>Expert Agents</h3>
-      <p>Connect with licensed agents who know your local market inside out.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">💰</div>
-      <h3>Best Value</h3>
-      <p>Transparent pricing with no hidden fees or surprise charges.</p>
-    </div>
-  </div>
-</section>
-
-<!-- AGENTS -->
-<section>
-  <div class="section-title">
-    <h2>Meet Our Top Agents</h2>
-    <p>Experienced professionals ready to guide you</p>
-  </div>
-  <div class="agents-grid">
-    <div class="agent-card">
-      <div class="agent-avatar">👩</div>
-      <h3>Sarah Johnson</h3>
-      <p>New York Specialist · 8 yrs exp</p>
-      <div class="agent-contact">
-        <a href="contact.html">Call</a>
-        <a href="contact.html">Email</a>
-      </div>
-    </div>
-    <div class="agent-card">
-      <div class="agent-avatar">👨</div>
-      <h3>Michael Chen</h3>
-      <p>LA & Beverly Hills · 12 yrs exp</p>
-      <div class="agent-contact">
-        <a href="contact.html">Call</a>
-        <a href="contact.html">Email</a>
-      </div>
-    </div>
-    <div class="agent-card">
-      <div class="agent-avatar">👩</div>
-      <h3>Emily Rodriguez</h3>
-      <p>Miami Luxury · 6 yrs exp</p>
-      <div class="agent-contact">
-        <a href="contact.html">Call</a>
-        <a href="contact.html">Email</a>
-      </div>
-    </div>
-    <div class="agent-card">
-      <div class="agent-avatar">👨</div>
-      <h3>David Park</h3>
-      <p>Chicago & Midwest · 10 yrs exp</p>
-      <div class="agent-contact">
-        <a href="contact.html">Call</a>
-        <a href="contact.html">Email</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section class="testimonials">
-  <div class="section-title">
-    <h2>What Our Clients Say</h2>
-    <p>Real stories from real homeowners</p>
-  </div>
-  <div class="testimonials-grid">
-    <div class="testimonial-card">
-      <div class="stars">★★★★★</div>
-      <p>"EstateHub made finding our first home so easy. Sarah was incredible throughout the whole process. Highly recommend!"</p>
-      <div class="testimonial-author">— James & Lisa T., New York</div>
-    </div>
-    <div class="testimonial-card">
-      <div class="stars">★★★★★</div>
-      <p>"Sold my condo in under two weeks at asking price. The team's market knowledge is unmatched."</p>
-      <div class="testimonial-author">— Robert M., Miami</div>
-    </div>
-    <div class="testimonial-card">
-      <div class="stars">★★★★★</div>
-      <p>"As a first-time investor, I needed guidance. David walked me through everything. Couldn't be happier."</p>
-      <div class="testimonial-author">— Priya K., Chicago</div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="cta-banner">
-  <h2>Ready to Find Your Perfect Home?</h2>
-  <p>Join thousands of happy homeowners who found their dream property with EstateHub.</p>
-  <a href="properties.html" class="btn btn-accent">Browse Properties</a>
-  <a href="contact.html" class="btn btn-outline">Talk to an Agent</a>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <div class="logo">Estate<span>Hub</span></div>
-      <p>Your trusted partner in real estate. We help you find, buy, sell, and rent properties with confidence and ease.</p>
-    </div>
-    <div>
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="properties.html">Properties</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Property Types</h4>
-      <ul>
-        <li><a href="properties.html">Houses</a></li>
-        <li><a href="properties.html">Apartments</a></li>
-        <li><a href="properties.html">Condos</a></li>
-        <li><a href="properties.html">Villas</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Contact</h4>
-      <ul>
-        <li><a href="#">📞 +1 (800) 555-0100</a></li>
-        <li><a href="#">✉️ info@estatehub.com</a></li>
-        <li><a href="#">📍 123 Realty Ave, NY</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; 2026 EstateHub. All rights reserved.</p>
-  </div>
-</footer>
-
-<script src="js/main.js"></script>
+    <footer><p>&copy; 2026 EstateHub. All rights reserved.</p></footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
