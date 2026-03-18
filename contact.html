@@ -1,66 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - EstateHub</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - EstateHub</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <nav>
-    <div class="logo">Estate<span>Hub</span></div>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="properties.html">Properties</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-        <li><a href="contact.html" class="nav-cta">List Property</a></li>
-    </ul>
+  <div class="logo">Estate<span>Hub</span></div>
+  <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+    <span></span><span></span><span></span>
+  </div>
+  <ul id="navMenu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="properties.html">Properties</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+    <li><a href="contact.html" class="nav-cta">List Property</a></li>
+  </ul>
 </nav>
 
 <div class="page-hero">
-    <h1>Contact Us</h1>
-    <p>We are here to help you find your next home</p>
+  <h1>Contact Us</h1>
+  <p>We're here to help you find your next home</p>
 </div>
 
-<section class="contact-grid" style="padding: 50px 5%;">
-    <div class="contact-info">
-        <h2>Get in Touch</h2>
-        <p>Have questions about a listing or want to sell your property? Our agents are ready to assist.</p>
-        <div class="contact-detail">
-            <h4>📍 Address</h4>
-            <p>123 Luxury Ave, Suite 500, New York, NY</p>
-        </div>
-        <div class="contact-detail">
-            <h4>📞 Phone</h4>
-            <p>+1 (800) 555-0100</p>
-        </div>
-        <div class="contact-detail">
-            <h4>✉️ Email</h4>
-            <p>support@estatehub.com</p>
-        </div>
+<section class="contact-grid">
+  <div class="contact-info">
+    <h2>Get in Touch</h2>
+    <p>Have questions about a listing or want to sell your property? Our agents are ready to assist you every step of the way.</p>
+    <div class="contact-detail">
+      <div class="contact-detail-icon">📍</div>
+      <div>
+        <h4>Address</h4>
+        <p>123 Luxury Ave, Suite 500, New York, NY 10001</p>
+      </div>
     </div>
+    <div class="contact-detail">
+      <div class="contact-detail-icon">📞</div>
+      <div>
+        <h4>Phone</h4>
+        <p>+1 (800) 555-0100</p>
+      </div>
+    </div>
+    <div class="contact-detail">
+      <div class="contact-detail-icon">✉️</div>
+      <div>
+        <h4>Email</h4>
+        <p>support@estatehub.com</p>
+      </div>
+    </div>
+    <div class="contact-detail">
+      <div class="contact-detail-icon">🕐</div>
+      <div>
+        <h4>Office Hours</h4>
+        <p>Mon – Fri: 9am – 7pm<br>Sat – Sun: 10am – 5pm</p>
+      </div>
+    </div>
+  </div>
 
-    <form class="contact-form" id="contactForm">
-        <h3>Send us a Message</h3>
-        <div class="form-group">
-            <label>Full Name</label>
-            <input type="text" placeholder="Your Name" required>
-        </div>
-        <div class="form-group">
-            <label>Email Address</label>
-            <input type="email" placeholder="Your Email" required>
-        </div>
-        <div class="form-group">
-            <label>Message</label>
-            <textarea placeholder="How can we help?"></textarea>
-        </div>
-        <button type="submit" class="form-submit">Send Message</button>
-    </form>
+  <form class="contact-form" id="contactForm">
+    <h3>Send us a Message</h3>
+    <div class="form-row">
+      <div class="form-group">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" placeholder="John" required>
+      </div>
+      <div class="form-group">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" placeholder="Doe" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="john@example.com" required>
+    </div>
+    <div class="form-group">
+      <label for="subject">Subject</label>
+      <select id="subject">
+        <option>I want to buy a property</option>
+        <option>I want to sell a property</option>
+        <option>General inquiry</option>
+        <option>Schedule a viewing</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="How can we help you?"></textarea>
+    </div>
+    <button type="submit" class="form-submit">Send Message</button>
+  </form>
 </section>
 
-<footer><p>&copy; 2026 EstateHub. All rights reserved.</p></footer>
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo">Estate<span>Hub</span></div>
+      <p>Your trusted partner in finding the perfect home. Premium real estate services since 2011.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="properties.html">Properties</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Property Types</h4>
+      <ul>
+        <li><a href="properties.html">Apartments</a></li>
+        <li><a href="properties.html">Villas</a></li>
+        <li><a href="properties.html">Houses</a></li>
+        <li><a href="properties.html">Commercial</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="#">123 Luxury Ave, NY</a></li>
+        <li><a href="#">+1 (800) 555-0100</a></li>
+        <li><a href="#">support@estatehub.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 EstateHub. All rights reserved.</p>
+  </div>
+</footer>
+
 <script src="js/main.js"></script>
 </body>
 </html>

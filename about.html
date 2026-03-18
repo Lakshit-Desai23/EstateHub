@@ -1,43 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - EstateHub</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - EstateHub</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <nav>
-    <div class="logo">Estate<span>Hub</span></div>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="properties.html">Properties</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="contact.html" class="nav-cta">List Property</a></li>
-    </ul>
+  <div class="logo">Estate<span>Hub</span></div>
+  <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+    <span></span><span></span><span></span>
+  </div>
+  <ul id="navMenu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="properties.html">Properties</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="contact.html" class="nav-cta">List Property</a></li>
+  </ul>
 </nav>
 
 <div class="page-hero">
-    <h1>Our Story</h1>
-    <p>15 years of excellence in real estate</p>
+  <h1>Our Story</h1>
+  <p>15 years of excellence in luxury real estate</p>
 </div>
 
+<!-- ABOUT STORY -->
 <section class="about-story">
-    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Our Office" style="width:100%; border-radius:12px;">
-    <div>
-        <h2>Founded on Trust</h2>
-        <p>Since 2011, EstateHub has been the leading name in luxury real estate. We started with a small office in New York and have grown into a nationwide network of experts.</p>
-        <p>Our mission is simple: To provide a transparent, high-tech, and stress-free experience for every home buyer and seller.</p>
-        <div class="values-grid" style="margin-top:30px;">
-            <div class="value-card"><h3>Integrity</h3><p>Honest guidance at every step.</p></div>
-            <div class="value-card"><h3>Innovation</h3><p>Using the latest tech for property searches.</p></div>
-        </div>
+  <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Our Office">
+  <div>
+    <h2>Founded on Trust &amp; Transparency</h2>
+    <p>Since 2011, EstateHub has been the leading name in luxury real estate. We started with a small office in New York and have grown into a nationwide network of over 200 expert agents.</p>
+    <p>Our mission is simple: to provide a transparent, high-tech, and stress-free experience for every home buyer and seller — from first-time buyers to seasoned investors.</p>
+    <div class="values-grid">
+      <div class="value-card"><h3>🤝 Integrity</h3><p>Honest, transparent guidance at every step of the journey.</p></div>
+      <div class="value-card"><h3>💡 Innovation</h3><p>Using the latest technology to power smarter property searches.</p></div>
+      <div class="value-card"><h3>🌍 Community</h3><p>Deeply rooted in the neighborhoods we serve.</p></div>
+      <div class="value-card"><h3>⭐ Excellence</h3><p>Committed to delivering results that exceed expectations.</p></div>
     </div>
+  </div>
 </section>
 
-<footer><p>&copy; 2026 EstateHub. All rights reserved.</p></footer>
+<!-- STATS -->
+<section class="stats">
+  <div class="stat-item"><h3 data-target="4800" data-suffix="+">0</h3><p>Properties Listed</p></div>
+  <div class="stat-item"><h3 data-target="3200" data-suffix="+">0</h3><p>Happy Clients</p></div>
+  <div class="stat-item"><h3 data-target="15" data-suffix=" yrs">0</h3><p>Experience</p></div>
+</section>
+
+<!-- TEAM -->
+<section class="team-section">
+  <div class="section-title">
+    <h2>Meet Our Team</h2>
+    <p>The experts behind your perfect home search</p>
+    <div class="line"></div>
+  </div>
+  <div class="team-grid">
+    <div class="team-card">
+      <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="David Chen">
+      <div class="team-card-info">
+        <h4>David Chen</h4>
+        <p>Founder &amp; CEO</p>
+      </div>
+    </div>
+    <div class="team-card">
+      <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Maria Lopez">
+      <div class="team-card-info">
+        <h4>Maria Lopez</h4>
+        <p>Head of Sales</p>
+      </div>
+    </div>
+    <div class="team-card">
+      <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Tom Williams">
+      <div class="team-card-info">
+        <h4>Tom Williams</h4>
+        <p>Senior Agent</p>
+      </div>
+    </div>
+    <div class="team-card">
+      <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Aisha Patel">
+      <div class="team-card-info">
+        <h4>Aisha Patel</h4>
+        <p>Property Consultant</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <h2>Ready to Work With Us?</h2>
+  <p>Let our experienced team help you find or sell your property today.</p>
+  <div class="hero-btns">
+    <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+    <a href="properties.html" class="btn btn-outline">View Properties</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo">Estate<span>Hub</span></div>
+      <p>Your trusted partner in finding the perfect home. Premium real estate services since 2011.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="properties.html">Properties</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Property Types</h4>
+      <ul>
+        <li><a href="properties.html">Apartments</a></li>
+        <li><a href="properties.html">Villas</a></li>
+        <li><a href="properties.html">Houses</a></li>
+        <li><a href="properties.html">Commercial</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="#">123 Luxury Ave, NY</a></li>
+        <li><a href="#">+1 (800) 555-0100</a></li>
+        <li><a href="#">support@estatehub.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 EstateHub. All rights reserved.</p>
+  </div>
+</footer>
+
 <script src="js/main.js"></script>
 </body>
 </html>

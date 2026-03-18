@@ -1,42 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Properties - EstateHub</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Properties - EstateHub</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <div class="logo">Estate<span>Hub</span></div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="properties.html" class="active">Properties</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html" class="nav-cta">List Property</a></li>
-        </ul>
-    </nav>
 
-    <div class="page-hero"><h1>All Properties</h1></div>
+<nav>
+  <div class="logo">Estate<span>Hub</span></div>
+  <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+    <span></span><span></span><span></span>
+  </div>
+  <ul id="navMenu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="properties.html" class="active">Properties</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="contact.html" class="nav-cta">List Property</a></li>
+  </ul>
+</nav>
 
-    <div class="properties-grid">
-        <div class="property-card" data-location="new york" data-type="apartment">
-            <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80" class="property-img">
-            <div class="property-info">
-                <p class="property-price">$450,000</p>
-                <p class="property-title">Modern Downtown Apartment</p>
-                <p class="property-location">📍 Manhattan, NY</p>
-            </div>
+<div class="page-hero">
+  <h1>All Properties</h1>
+  <p>Browse our full collection of premium listings</p>
+</div>
+
+<div class="properties-page">
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <input type="text" placeholder="🔍 Search location...">
+    <select>
+      <option>All Types</option>
+      <option>Apartment</option>
+      <option>Villa</option>
+      <option>House</option>
+      <option>Commercial</option>
+    </select>
+    <select>
+      <option>Any Price</option>
+      <option>Under $500K</option>
+      <option>$500K – $1M</option>
+      <option>$1M+</option>
+    </select>
+    <select>
+      <option>Any Beds</option>
+      <option>1+ Beds</option>
+      <option>2+ Beds</option>
+      <option>3+ Beds</option>
+      <option>4+ Beds</option>
+    </select>
+    <button>Apply Filters</button>
+  </div>
+
+  <!-- GRID -->
+  <div class="properties-grid">
+    <div class="property-card" data-location="new york" data-type="apartment">
+      <div class="property-img-wrap">
+        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80" alt="Downtown Apartment" class="property-img">
+        <span class="property-badge">For Sale</span>
+      </div>
+      <div class="property-info">
+        <p class="property-price">$450,000</p>
+        <p class="property-title">Modern Downtown Apartment</p>
+        <p class="property-location">📍 Manhattan, New York</p>
+        <div class="property-features">
+          <span>🛏 3 Beds</span><span>🚿 2 Baths</span><span>📐 1,200 sqft</span>
         </div>
-        <div class="property-card" data-location="los angeles" data-type="villa">
-            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80" class="property-img">
-            <div class="property-info">
-                <p class="property-price">$1,250,000</p>
-                <p class="property-title">Luxury Hillside Villa</p>
-                <p class="property-location">📍 Beverly Hills, CA</p>
-            </div>
-        </div>
+      </div>
     </div>
 
-    <script src="js/main.js"></script>
+    <div class="property-card" data-location="los angeles" data-type="villa">
+      <div class="property-img-wrap">
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80" alt="Hillside Villa" class="property-img">
+        <span class="property-badge">For Sale</span>
+      </div>
+      <div class="property-info">
+        <p class="property-price">$1,250,000</p>
+        <p class="property-title">Luxury Hillside Villa</p>
+        <p class="property-location">📍 Beverly Hills, California</p>
+        <div class="property-features">
+          <span>🛏 5 Beds</span><span>🚿 4 Baths</span><span>📐 4,500 sqft</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="property-card" data-location="austin" data-type="house">
+      <div class="property-img-wrap">
+        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=600&q=80" alt="Suburban Home" class="property-img">
+        <span class="property-badge">New</span>
+      </div>
+      <div class="property-info">
+        <p class="property-price">$680,000</p>
+        <p class="property-title">Charming Suburban Home</p>
+        <p class="property-location">📍 Austin, Texas</p>
+        <div class="property-features">
+          <span>🛏 4 Beds</span><span>🚿 3 Baths</span><span>📐 2,800 sqft</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="property-card" data-location="miami" data-type="apartment">
+      <div class="property-img-wrap">
+        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=600&q=80" alt="Miami Condo" class="property-img">
+        <span class="property-badge">For Rent</span>
+      </div>
+      <div class="property-info">
+        <p class="property-price">$3,500/mo</p>
+        <p class="property-title">Beachfront Condo</p>
+        <p class="property-location">📍 Miami Beach, Florida</p>
+        <div class="property-features">
+          <span>🛏 2 Beds</span><span>🚿 2 Baths</span><span>📐 1,050 sqft</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="property-card" data-location="chicago" data-type="house">
+      <div class="property-img-wrap">
+        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=600&q=80" alt="Chicago Home" class="property-img">
+        <span class="property-badge">For Sale</span>
+      </div>
+      <div class="property-info">
+        <p class="property-price">$520,000</p>
+        <p class="property-title">Classic Chicago Townhouse</p>
+        <p class="property-location">📍 Lincoln Park, Chicago</p>
+        <div class="property-features">
+          <span>🛏 3 Beds</span><span>🚿 2 Baths</span><span>📐 1,900 sqft</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="property-card" data-location="seattle" data-type="villa">
+      <div class="property-img-wrap">
+        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80" alt="Seattle Villa" class="property-img">
+        <span class="property-badge">New</span>
+      </div>
+      <div class="property-info">
+        <p class="property-price">$2,100,000</p>
+        <p class="property-title">Modern Waterfront Villa</p>
+        <p class="property-location">📍 Mercer Island, Seattle</p>
+        <div class="property-features">
+          <span>🛏 6 Beds</span><span>🚿 5 Baths</span><span>📐 5,800 sqft</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo">Estate<span>Hub</span></div>
+      <p>Your trusted partner in finding the perfect home. Premium real estate services since 2011.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="properties.html">Properties</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Property Types</h4>
+      <ul>
+        <li><a href="properties.html">Apartments</a></li>
+        <li><a href="properties.html">Villas</a></li>
+        <li><a href="properties.html">Houses</a></li>
+        <li><a href="properties.html">Commercial</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="#">123 Luxury Ave, NY</a></li>
+        <li><a href="#">+1 (800) 555-0100</a></li>
+        <li><a href="#">support@estatehub.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 EstateHub. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>

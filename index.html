@@ -1,35 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EstateHub | Luxury Real Estate</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EstateHub | Luxury Real Estate</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <div class="logo">Estate<span>Hub</span></div>
-        <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="properties.html">Properties</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html" class="nav-cta">List Property</a></li>
-        </ul>
-    </nav>
 
-    <header class="hero">
-        <h1>Discover Your <span>Dream Home</span></h1>
-        <p>Premium properties in the most sought-after locations.</p>
-        <a href="properties.html" style="background:var(--accent); color:white; padding:12px 25px; border-radius:5px; display:inline-block; margin-top:20px;">Explore Listings</a>
-    </header>
+<nav>
+  <div class="logo">Estate<span>Hub</span></div>
+  <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+    <span></span><span></span><span></span>
+  </div>
+  <ul id="navMenu">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="properties.html">Properties</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="contact.html" class="nav-cta">List Property</a></li>
+  </ul>
+</nav>
 
-    <section class="stats">
-        <div class="stat-item"><h3 data-target="4800" data-suffix="+">0</h3><p>Properties Listed</p></div>
-        <div class="stat-item"><h3 data-target="3200" data-suffix="+">0</h3><p>Happy Clients</p></div>
-        <div class="stat-item"><h3 data-target="15" data-suffix=" yrs">0</h3><p>Experience</p></div>
-    </section>
+<!-- HERO -->
+<header class="hero">
+  <h1>Find Your Perfect <span>Dream Home</span></h1>
+  <p>Premium properties in the most sought-after locations. Trusted by thousands of happy homeowners.</p>
+  <div class="hero-search">
+    <input type="text" placeholder="Search by city, neighborhood...">
+    <select>
+      <option>All Types</option>
+      <option>Apartment</option>
+      <option>Villa</option>
+      <option>House</option>
+      <option>Commercial</option>
+    </select>
+    <select>
+      <option>Any Price</option>
+      <option>Under $500K</option>
+      <option>$500K - $1M</option>
+      <option>$1M+</option>
+    </select>
+    <button>🔍 Search</button>
+  </div>
+  <div class="hero-btns">
+    <a href="properties.html" class="btn btn-primary">Explore Listings</a>
+    <a href="about.html" class="btn btn-outline">Learn More</a>
+  </div>
+</header>
 
-    <footer><p>&copy; 2026 EstateHub. All rights reserved.</p></footer>
-    <script src="js/main.js"></script>
+<!-- STATS -->
+<section class="stats">
+  <div class="stat-item"><h3 data-target="4800" data-suffix="+">0</h3><p>Properties Listed</p></div>
+  <div class="stat-item"><h3 data-target="3200" data-suffix="+">0</h3><p>Happy Clients</p></div>
+  <div class="stat-item"><h3 data-target="15" data-suffix=" yrs">0</h3><p>Experience</p></div>
+</section>
+
+<!-- FEATURED PROPERTIES -->
+<section class="featured-section">
+  <div class="section-title">
+    <h2>Featured Properties</h2>
+    <p>Hand-picked listings from our top agents</p>
+    <div class="line"></div>
+  </div>
+  <div class="properties-grid">
+    <div class="property-card">
+      <div class="property-img-wrap">
+        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80" alt="Downtown Apartment" class="property-img">
+        <span class="property-badge">For Sale</span>
+      </div>
+      <div class="property-info">
+        <p class="property-price">$450,000</p>
+        <p class="property-title">Modern Downtown Apartment</p>
+        <p class="property-location">📍 Manhattan, New York</p>
+        <div class="property-features">
+          <span>🛏 3 Beds</span>
+          <span>🚿 2 Baths</span>
+          <span>📐 1,200 sqft</span>
+        </div>
+      </div>
+    </div>
+    <div class="property-card">
+      <div class="property-img-wrap">
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80" alt="Hillside Villa" class="property-img">
+        <span class="property-badge">For Sale</span>
+      </div>
+      <div class="property-info">
+        <p class="property-price">$1,250,000</p>
+        <p class="property-title">Luxury Hillside Villa</p>
+        <p class="property-location">📍 Beverly Hills, California</p>
+        <div class="property-features">
+          <span>🛏 5 Beds</span>
+          <span>🚿 4 Baths</span>
+          <span>📐 4,500 sqft</span>
+        </div>
+      </div>
+    </div>
+    <div class="property-card">
+      <div class="property-img-wrap">
+        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=600&q=80" alt="Suburban Home" class="property-img">
+        <span class="property-badge">New</span>
+      </div>
+      <div class="property-info">
+        <p class="property-price">$680,000</p>
+        <p class="property-title">Charming Suburban Home</p>
+        <p class="property-location">📍 Austin, Texas</p>
+        <div class="property-features">
+          <span>🛏 4 Beds</span>
+          <span>🚿 3 Baths</span>
+          <span>📐 2,800 sqft</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center; margin-top:40px;">
+    <a href="properties.html" class="btn btn-primary">View All Properties</a>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why-section">
+  <div class="section-title">
+    <h2>Why Choose EstateHub</h2>
+    <p>We make buying and selling property simple and stress-free</p>
+    <div class="line"></div>
+  </div>
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon">🏆</div>
+      <h3>Trusted Experts</h3>
+      <p>15+ years of experience with a team of certified real estate professionals.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔍</div>
+      <h3>Smart Search</h3>
+      <p>Advanced filters to find exactly what you need in seconds.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔒</div>
+      <h3>Secure Deals</h3>
+      <p>Every transaction is fully verified and legally protected.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">💬</div>
+      <h3>24/7 Support</h3>
+      <p>Our agents are always available to answer your questions.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section">
+  <div class="section-title">
+    <h2>What Our Clients Say</h2>
+    <p>Real stories from real homeowners</p>
+    <div class="line"></div>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-text">EstateHub made finding our dream home so easy. The team was professional and guided us every step of the way.</p>
+      <div class="testimonial-author">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah M." class="testimonial-avatar">
+        <div>
+          <p class="testimonial-name">Sarah M.</p>
+          <p class="testimonial-role">Homeowner, New York</p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-text">Sold my property in under 2 weeks at above asking price. Couldn't be happier with the service and results.</p>
+      <div class="testimonial-author">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="James T." class="testimonial-avatar">
+        <div>
+          <p class="testimonial-name">James T.</p>
+          <p class="testimonial-role">Property Seller, California</p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-text">The search tools are incredible. I found my perfect apartment in a neighborhood I didn't even know existed.</p>
+      <div class="testimonial-author">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya K." class="testimonial-avatar">
+        <div>
+          <p class="testimonial-name">Priya K.</p>
+          <p class="testimonial-role">First-time Buyer, Texas</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <h2>Ready to Find Your Next Home?</h2>
+  <p>Join thousands of satisfied clients who found their perfect property with EstateHub.</p>
+  <div class="hero-btns">
+    <a href="properties.html" class="btn btn-primary">Browse Properties</a>
+    <a href="contact.html" class="btn btn-outline">Talk to an Agent</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo">Estate<span>Hub</span></div>
+      <p>Your trusted partner in finding the perfect home. Premium real estate services since 2011.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="properties.html">Properties</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Property Types</h4>
+      <ul>
+        <li><a href="properties.html">Apartments</a></li>
+        <li><a href="properties.html">Villas</a></li>
+        <li><a href="properties.html">Houses</a></li>
+        <li><a href="properties.html">Commercial</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="#">123 Luxury Ave, NY</a></li>
+        <li><a href="#">+1 (800) 555-0100</a></li>
+        <li><a href="#">support@estatehub.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 EstateHub. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
